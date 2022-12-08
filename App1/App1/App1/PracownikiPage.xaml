@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.PracownikiPage">
+
+
+    <StackLayout>
+        <Frame BackgroundColor="LightGray"  Padding="10" >
+                <Label Text="MetaMaze"  TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            </Frame>
+
+
+        <ListView x:Name="lstPracowniki">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" >
+                            <Label Text="{Binding Name}" FontSize="Small"></Label>
+                            <Label Text="{Binding Email}" FontSize="Small"></Label>
+                            <Label Text="{Binding Imie}" FontSize="Small"></Label>
+                            <Label Text="{Binding Kim_pracuje_w_firmie}" FontSize="Small"></Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+    </StackLayout>
+   
+    <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Add" Clicked="Addatrybuty_Clicked"></ToolbarItem>
+    <ToolbarItem Text="Update" Clicked="UpadatePracowniki_Clicked"></ToolbarItem>
+    <ToolbarItem Text="Delete" Clicked="DeletePracowniki_Clicked"></ToolbarItem>
+       
+    </ContentPage.ToolbarItems>
+
+  
+    
+
+</ContentPage>

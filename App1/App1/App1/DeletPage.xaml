@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.DeletPage"
+             Title="Delete">
+    <StackLayout>
+        <Frame BackgroundColor="LightGray"  Padding="10" >
+            <Label Text="MetaMaze"  TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        </Frame>
+
+        <Label Text="Jaki Zakaz chcecie skasowac np(1):" TextColor="Black" FontSize="Small"></Label>
+        <Entry x:Name="Numer_zakazss" Placeholder="Numer Zakazu np(1):" FontSize="Small"></Entry>
+
+        <Button Text="Delete" Clicked="DeletZakazy_Clicked"></Button>
+        
+    </StackLayout>
+</ContentPage>

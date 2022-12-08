@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.AdministratorPage">
+
+
+    <StackLayout>
+        <Frame BackgroundColor="LightGray"  Padding="10" >
+            <Label Text="MetaMaze"  TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        </Frame>
+
+
+        <ListView x:Name="lstAdmin">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding Idadmin}" FontSize="Small" ></Label>
+                            <Label Text="{Binding Nazwisko_imie}" FontSize="Small" ></Label>
+                            <Label Text="{Binding Zacodopwiada}" FontSize="Small" ></Label>
+                            <Label Text="{Binding Emailadmin}" FontSize="Small" ></Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+    </StackLayout>
+
+    <ContentPage.ToolbarItems>
+        
+        <ToolbarItem Text="Add" Clicked="Addadmin_Clicked"></ToolbarItem>
+        <ToolbarItem Text="Update" Clicked="Updateadmin_Clicked"></ToolbarItem>
+        <ToolbarItem Text="Delete" Clicked="DeleteAdmin_Clicked"></ToolbarItem>
+        
+    </ContentPage.ToolbarItems>
+  
+</ContentPage>

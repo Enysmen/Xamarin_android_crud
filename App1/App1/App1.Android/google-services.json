@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "210682136690",
+    "firebase_url": "https://metamaze-36fa6-default-rtdb.firebaseio.com",
+    "project_id": "metamaze-36fa6",
+    "storage_bucket": "metamaze-36fa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210682136690:android:0a38cc08cb6a9b937b5aeb",
+        "android_client_info": {
+          "package_name": "com.companyname.app1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210682136690-fj98v2maqdb55otv61bpp23lvb1kog0l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdU7pa9MUt0sG85Nt9JTu892d1Z1twZc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210682136690-fj98v2maqdb55otv61bpp23lvb1kog0l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

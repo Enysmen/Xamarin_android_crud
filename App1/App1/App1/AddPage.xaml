@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.AddPage" 
+             Title="Add">
+             
+        <StackLayout>
+        <Frame BackgroundColor="LightGray"  Padding="10" >
+            <Label Text="MetaMaze"  TextColor="White" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        </Frame>
+        <Label Text="Gdzie chcecie dobawic:" TextColor="Black" FontSize="12" ></Label>
+        <Entry x:Name="Atrybut" Placeholder="Pracowniki albo Zakazy i Administrator" FontSize="Small" ></Entry>
+        <Label Text="Jaki Pracownik albo Zakaz i Administrator np: Pracownik1:" TextColor="Black" FontSize="12" ></Label>
+        <Entry x:Name="name" Placeholder="" FontSize="Small" ></Entry>
+            
+            
+        <Label Text="Wszystko dla Pracownika:" TextColor="Black" FontSize="12" ></Label>
+        <Entry x:Name="EmailADD" Placeholder="Email" FontSize="Small" ></Entry>
+        <Entry x:Name="Imie_Nazwisko" Placeholder="Imie Nazwisko" FontSize="Small" ></Entry>
+        <Entry x:Name="Kim_pracuje" Placeholder="Kim pracuje w firmie" FontSize="Small"  ></Entry>
+            
+            
+            
+        <Label Text="Wszystko dla Zakazow:" TextColor="Black" FontSize="12" ></Label>
+        <Entry x:Name="Numer_zakazu" Placeholder="Numer Zakazu np:1" FontSize="Small"></Entry>
+        <Entry x:Name="ilie_kosztowal" Placeholder="Ilie kosztowal" FontSize="Small" ></Entry>
+        <Entry x:Name="Co_zakazano" Placeholder="Co Zakazano" FontSize="Small" ></Entry>
+
+
+        <Label Text=" Wszystko dla Administator" TextColor="Black" FontSize="12"></Label>
+        <Entry x:Name="IdAdmin" Placeholder="ID administratora np(1,2):" FontSize="Small"></Entry>    
+        <Entry x:Name="Nazwisko_Imie" Placeholder="Imie Nazwisko" FontSize="Small"></Entry>
+        <Entry x:Name="EmaillAdmin" Placeholder="Email"  FontSize="Small"></Entry>
+        <Entry x:Name="Zacoodpow" Placeholder="Za co odpowiada" FontSize="Small"></Entry>
+
+        <Button Text="Save" Clicked="AddSavedata_Clicked"></Button>
+
+    </StackLayout>
+    
+</ContentPage>
